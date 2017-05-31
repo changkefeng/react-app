@@ -2,7 +2,8 @@
  * Created by haoxiao on 2017-05-30.
  */
 import React,{Component} from 'react';
-import './index.less'
+import './index.less';
+import {Link} from 'react-router-dom';
 //主页头部组件
 export default class HomeHeader extends Component{
     render(){
@@ -16,9 +17,11 @@ export default class HomeHeader extends Component{
                     <i className="iconfont icon-sousuo-xianxing"></i>
                     <input type="text"/>
                 </div>
-                <div className="profile">
-                    <i className="iconfont icon-yonghufill"></i>
-                </div>
+                <Link to='/login'>
+                    <div className="profile">
+                        <i className="iconfont icon-yonghufill"></i>
+                    </div>
+                </Link>
             </div>
         )
     }

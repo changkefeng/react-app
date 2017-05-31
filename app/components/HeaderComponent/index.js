@@ -4,8 +4,12 @@
 import React,{Component} from 'react';
 import './index.less';
 export default class HeaderComponent extends Component{
-    back = ()=>{
-        this.props.history.go(-1);
+    back =()=>{
+        if(this.props.back){
+            this.props.history.push('/')
+        }else {
+            this.props.history.go(-1)
+        }
     };
     render(){
         return (
