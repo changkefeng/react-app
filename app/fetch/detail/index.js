@@ -8,5 +8,5 @@ export function getInfo(id) {
 }
 
 export function getComment(id,page) {
-    return get('/api/detail/'+id+'/'+page)
+    return get('/api/detail/comment/'+id+'/'+page)
 }
